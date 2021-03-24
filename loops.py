@@ -89,5 +89,10 @@ while user_prompt:
 # This line of code only gets executed if the user enters age in digits
 print(f" Your age is {age}")
 
+# user_age = input("please enter your age: ")
+# while not user_age.isdigit():
+#    user_age = input("please enter your age using digits: ")
+# print(f"You are {user_age} years old")
+
 # Ensure the loop conditions are in your control to avoid going into the infinite loop
 print("--------------------------------WHILE--------------------------------")

@@ -52,7 +52,9 @@ for items in shooping_list:
         break
         # at this point when milk is found in the items iterating through the shooping_list the loop will stop
 ````
-- Let's create a dict of our food bill so we can iterate through it using a `for` loop: <br/>
+- Use case:<br/>
+
+Let's create a dict of our food bill so we can iterate through it using a `for` loop: <br/>
 ```` python
 food_bill = {
     1: {"name ": "James", "bill": "£1"},
@@ -92,7 +94,20 @@ while num < 10: # while true continue, if false stop
         break
     num += 1
 ````
-- Use cases:
+- Use case: <br/>
+
+We check if the age entered by the user is a digit.
+If it is not, we ask again to enter the age until it is a digit.  
 ```` python
-ADD code
+user_prompt = True
+while user_prompt:
+    age = input(" Please enter your age: ")
+    if age.isdigit(): # isdigit() is ensures to the user input is in digits
+        user_prompt = False
+    else:
+        print("Please enter your age in Digits ")
+# This line of code only gets executed if the user enters age in digits
+print(f" Your age is {age}")
 ````
+## <u>NOTE</u>:
+Ensure the loop conditions are in your control to avoid going into the infinite loop!
