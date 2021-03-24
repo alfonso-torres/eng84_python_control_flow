@@ -30,7 +30,7 @@ If `num` is negative, `Negative number` is printed.
 Loops help to iterate through the data.
 
 ### *For loops*
-A `for` loop is used for iterating over a sequence. We know the number of iterations beforehand.
+A `for` loop is used for iterating over a sequence.
 
 - Let's `for` loop to iterate through out list:
 ```` python
@@ -67,5 +67,32 @@ for key in food_bill:
     print("Name: " + value["name "] + ", and the bill is: " + value["bill"])
 }
 ````
-
+- Nested loop: you can use one or more loop inside any another `for` loop:
+```` python
+for item in food_bill.values():
+    # Nested loop to iterate through the nested dictionary to get the value of bill by name
+    for Name_bill in item.values():
+        print(Name_bill)
+````
 ### *While loops*
+The `while` loop in Python is used to iterate over a block of code as long as the condition is true. We generally use this loop when we do not know the number of times to iterate beforehand.
+- Let's see an example of `while` loop:
+```` python
+num = 0
+while num < 10: # while true continue, if false stop
+    print(f"it's working -> {num}")
+    num += 1
+````
+- With the `break` statement we can stop the loop even if the while condition is true:
+```` python
+num = 0
+while num < 10: # while true continue, if false stop
+    print(f"it's working -> {num}")
+    if num == 4: # if True the loop ends.
+        break
+    num += 1
+````
+- Use cases:
+```` python
+ADD code
+````
